@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container py-4">
+      <form action="24sep.html">
+        <input id="user" type="text" placeholder="username" />
+        <br />
+        <br />
+        <input id="pass" type="password" placeholder="password" />
+        <br />
+        <br />
+        <button onclick="valid()" type="button">submit</button>
+      </form>
+      <br>
+      <h3 id="work"></h3>
+    </div>
+
+
+    <script>
+        function valid(){
+            var username = document.getElementById("user");
+            var password = document.getElementById("pass");
+            var worked = document.getElementById("work");
+            if (username.value == "rashed" || password.value == "2155"){
+                worked.innerHTML="worked";
+            }
+            else{
+                worked.innerHTML="not worked";
+            }
+        }
+    </script>
+  </body>
+</html>
