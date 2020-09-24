@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn {
+        padding: 3px 20px;
+        background-color: red;
+        color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+                alert("seccess");
+            }
+        }
+
+        
+
+    </script>
+
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname" required>
+        <input id="inp" type="submit" value="Submit" onclick="greet()">
+    </form>
+</body>
+
+</html>

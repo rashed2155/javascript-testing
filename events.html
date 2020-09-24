@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<style>
+    #btn {
+        padding: 10px 34px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 id="head">this is header 1</h1>
+        <p id="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eaque velit voluptatem
+            perferendis, quas itaque incidunt optio iure quis consectetur quod, ad deserunt dignissimos! Alias itaque
+            quod sit minus harum sed neque possimus corporis similique assumenda nam, ullam temporibus ratione odit
+            odio. Nihil ad possimus eveniet iusto eum dolor labore!</p>
+        <button id="btn" onclick="toggleHide()">show/hide</button>
+    </div>
+
+    <script>
+        let pera = document.getElementById('pera');
+        pera.addEventListener('mouseover', function run() {
+            console.log('mouse inside');
+        });
+
+        pera.addEventListener('mouseout', function run() {
+            console.log('mouse outside');
+        });
+
+
+
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let pera = document.getElementById('pera');
+            let head = document.getElementById('head');
+            if (pera.style.display != 'none' || head.style.display != 'none') {
+                pera.style.display = 'none';
+                head.style.display = 'none';
+            }
+            else {
+                pera.style.display = 'block';
+                head.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

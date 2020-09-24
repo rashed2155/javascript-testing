@@ -1,0 +1,12 @@
+console.time('code');
+console.log('hello world');
+console.log(4+34);
+console.log([4,3,5,1]);
+console.log(true);
+console.log({rashed:'this', marks:34});
+console.table({rashed:'this', marks:34});
+console.warn('this is a warn');
+//console.clear();
+console.timeEnd('code');
+console.assert(age>189, 'not possible');
+console.error('this is error');
