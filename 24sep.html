@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <img width="200px" src="../img/gp.jpg" alt="image">
+    <img id="img" onmouseover="setnewImage()" onmouseout="oldimage()" width="200px" src="../img/gp.jpg" alt="image">
+
+    <script>
+        function setnewImage(){
+            document.getElementById("img").src="img/new.jpg";
+        }
+        function oldimage(){
+            document.getElementById("img").src="img/gp.jpg";
+        }
+    </script>
 </body>
 </html>
